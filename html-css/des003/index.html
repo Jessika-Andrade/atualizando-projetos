@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+
+    <style>
+
+        body {
+            background-color: #005152;
+        }
+
+        header h1 {
+            color: #BDBB40;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        nav {
+            background-color: #63AB7B;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin: 0 50px;
+        }
+
+        a {
+            color: #452622;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        a:hover {
+            background-color:#bdbb40ae;
+        }
+
+        main {
+            margin: auto;
+        }
+
+        section h2 {
+            color: #ead1d1;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            padding: 5px;
+        }
+
+        #personagens {
+            margin: 20px auto;
+            color: #FFFFFF;
+            background-color: #63ab7b5b;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            max-width: 400px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>
+            Percy Jackson e os Olimpianos
+        </h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="Página Inicial" id="home-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" title="Sobre Nós" id="about-link">About</a>
+                </li>
+                <li>
+                    <a href="#" title="Contate-nos" id="contact-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="galeria">
+            <h2>
+                Galeria de personagens
+            </h2>
+            <div class="galeria-item">
+                <img 
+                    src="https://m.media-amazon.com/images/M/MV5BNzc3MjNhMzUtYWVlOC00Y2U4LTg1YmItNjZmMGQ5ZGJhNmMyXkEyXkFqcGdeQWFybm8@._V1_.jpg" 
+                    alt="Menino loiro segurando uma espada"
+                    title="Percy Jackson"
+                    width="600"
+                    height="300"
+                >
+            </div>
+            <div class="galeria-item">
+                <img 
+                    src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/09/annabeth-percy-jackson-season-2.jpg" 
+                    alt="Menina negra com tranças encarando a câmera"
+                    title="Annabeth Chase"
+                    width="600"
+                    height="300"
+                >
+            </div>
+            <div class="galeria-item">
+                <img 
+                    src="https://assets.teenvogue.com/photos/6580999225ee0e9f386533cc/16:9/w_2560%2Cc_limit/165843_0277_R1.jpg" 
+                    alt="Menino indiano sorrindo para a câmera"
+                    title="Grover"
+                    width="600"
+                    height="300"
+                >
+            </div>
+        </section>
+
+        <div 
+            id="personagens" 
+            data-product-name="trio de ouro"
+            data-product-id="456" 
+            data-product-price="199.99"
+            data-product-description="Evento limitado para tirar foto com os protagonistas da série de sucesso."
+        >
+            Assista a série na Disney+
+        </div>
+    </main>
+</body>
+</html>

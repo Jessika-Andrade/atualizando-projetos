@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 500px; 
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        thead, tfoot {
+            background-color: #383838;
+            color: #ffff;
+        }
+
+        .col-regiao {
+            background-color: #f0f0f0;
+        }
+        .col-total {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Tabelas de Vendas
+    </h1>
+    <div id="container">
+        <table>
+            <caption>Desempenho de Vendas do 1º Semestre (2025)</caption>
+        
+            <colgroup>
+                <col class="col-regiao">
+                <col span="4">
+                <col class="col-total">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Região</th>
+                    <th scope="col" colspan="2">Q1: Vendas por Categoria (Jan-Mar)</th>
+                    <th scope="col" colspan="2">Q2: Vendas por Categoria (Abr-Jun)</th>
+                    <th scope="col" rowspan="2">Total Semestral</th>
+                </tr>
+                <tr>
+                    <th scope="col">Eletrônicos</th>
+                    <th scope="col">Vestuário</th>
+                    <th scope="col">Eletrônicos</th>
+                    <th scope="col">Vestuário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Norte</th>
+                    <td>120.500</td>
+                    <td>45.300</td>
+                    <td>135.200</td>
+                    <td>51.000</td>
+                    <td>352.000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sul</th>
+                    <td>185.000</td>
+                    <td>60.100</td>
+                    <td>178.500</td>
+                    <td>65.400</td>
+                    <td>489.000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Leste</th>
+                    <td>92.000</td>
+                    <td>38.800</td>
+                    <td>105.700</td>
+                    <td>42.100</td>
+                    <td>278.600</td>
+                </tr>
+                <tr>
+                    <th scope="row">Oeste</th>
+                    <td>140.200</td>
+                    <td>55.500</td>
+                    <td>160.000</td>
+                    <td>70.300</td>
+                    <td>426.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total Global</th>
+                    <td>537.700</td>
+                    <td>199.700</td>
+                    <td>579.400</td>
+                    <td>228.800</td>
+                    <th>1.545.600</th> </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

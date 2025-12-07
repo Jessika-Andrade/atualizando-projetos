@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Conhecimento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            padding: 10px;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul > li > a:hover {
+            background-color: #9AC1CE;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <ul>
+            <li><a href="#area-midia">Mídia</a></li>
+            <li><a href="#area-textos">Texto</a></li>
+            <li><a href="#area-tabela">Tabela</a></li>
+            <li><a href="#area-rodape">Rodapé</a></li>
+           </ul> 
+        </nav>
+    </header>
+    <main>
+        <h1 id="area-midia">
+            Tipos de Mídia
+        </h1>
+
+        <h2>Tag &ltimg&gt</h2>
+        <img 
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+        alt="Paisagem com árvores, montanhas e um rio."
+        width="300"
+        >
+        <p>
+            Foi utilizado a tag e o caminho <b>src</b> para mostrar o caminho, <b>alt</b> para descrever o que há na imagem e <b>width</b> para ajustar a largura.
+        </p>
+
+        <h2>
+            Tag &ltaudio&gt
+        </h2>
+        <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls muted loop>Seu navegador não suporta Tag de Áudio</audio>
+        <p>
+            Foi utilizado a tag <b>src</b> para mostrar o caminho e os controles: <br>
+            <b>autoplay</b> = toca sozinho. <br>
+            <b>muted</b> = para vir silencioso. <br>
+            <b>loop</b> = para recomeçar quando chegar ao fim. <br>
+            E também há uma observação caso o áudio não funcione no navegador, o usuário será informado.
+        </p>
+
+        <h2>Tag &ltvideo&gt</h2>
+        <video 
+        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        width="300" controls>Video não é suportado no seu navegador.</video>
+        <p>
+            Foi utilizado a tag <b>src</b> para mostrar o caminho. E usado <b>width</b> para diminuir o tamanho do arquivo.
+        </p>
+
+        <h2>Tag &ltiframe&gt</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215451.4940774034!2d-93.81439445000001!3d32.4611995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86312a8d1798e91f%3A0x2ebd2c1687a49cdd!2sShreveport%2C%20LA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1764704370066!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>
+            Foi copiado o iframe diretamente do site. Nesse caso, o maps. Também foi alterado a largura e a altura.
+        </p>
+
+        <hr>
+        
+        <h2 id="area-textos">
+            Área de textos
+        </h2>
+
+        <h3>
+            Blockquote e Cite
+        </h3>
+        <figure>
+            <blockquote>"A web é mais uma inovação social do que técnica."</blockquote>
+            <figcaption>
+                <cite>Tim Berners-Lee</cite>
+            </figcaption>
+        </figure>
+
+        <h3>
+            Abbr
+        </h3>
+        <p>
+            O <abbr title="HyperText Markup Language">HTML</abbr>é a base da internet. <br>
+        </p>
+
+        <h3>
+            Dfn
+        </h3>
+        <p>
+            Um <dfn>algoritmo</dfn> é uma sequência finita de ações executáveis que visam obter uma solução para um determinado tipo de problema.
+        </p>
+
+        <h3>
+            S e Ins
+        </h3>
+        <p>
+            Promoção de Curso de Front-end! De: <s>R$ 500,00</s> Por: <ins>R$ 250,00</ins>
+        </p>
+
+        <h3>Listas</h3>
+        <dl>
+            <dt>CSS</dt>
+            <dd>Linguagem usada para estilizar elementos HTML.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação que permite interatividade nas páginas.</dd>
+        </dl>
+
+        <h3>
+            Endereços e links
+        </h3>
+        <address>
+            Rua dos Desenvolvedores, 123 - São Paulo.
+        </address>
+        <a href="mailto:email@provador.com">Enviar email</a>
+        <p>
+            Veja também: <a href="https://www.google.com" target="_blank">Portfólio aqui.</a>
+        </p>
+
+        <h3 id="area-tabela">
+            Tabela
+        </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Indivíduo</th>
+                    <th>Idade</th>
+                    <th>Consumo de água</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>10 anos</td>
+                    <td>8x ao dia</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>8 anos</td>
+                    <td>6x ao dia</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>12 anos</td>
+                    <td>10x ao dia</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Beba água!</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+    <footer id="area-rodape">
+        <h2>Contato</h2>
+        <p>
+            Informações de contato e rodapé da página.
+        </p>
+    </footer>
+</body>
+</html>

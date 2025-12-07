@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando lógica com imagens</title>
+</head>
+<body>
+    <main>
+        <h1>
+            Regra dos três cenários
+        </h1>
+        <h2>
+            Banner inteligente
+        </h2>
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/paisagem-grande.jpg">
+            <source media="(min-width: 600px)" srcset="images/paisagem-minima.jpg">
+            <img src="images/paisagem-minima.jpg" alt="Paisagem esverdeada">
+        </picture>
+        <p>
+            Foi utilizado a tag &ltpicture&gt para estabelecer os tamanhos das imagens que mudam conforme o tamanho de tela.
+        </p>
+        <h2>
+            O avatar simples
+        </h2>
+        <img
+        src="https://cdn-icons-png.flaticon.com/512/5556/5556468.png"
+        alt="Avatar de um menino com cabelo azul"
+        width="100"
+        >
+        <p>
+            Foi utilizado a tag &ltimg&gt por ser algo simples (não precisar transformar os tamanhos) e não precisar de legenda.
+        </p>
+        <h2>
+           A Obra de Arte
+        </h2>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19" alt="mão segurando um livro nas montanhas com uma cachoeira no fundo" width="200"
+            height="200">
+            <figcaption>
+                Arte Abstrata - Óleo sobre tela, 2024
+            </figcaption>
+        </figure>
+    </main>
+</body>
+</html>

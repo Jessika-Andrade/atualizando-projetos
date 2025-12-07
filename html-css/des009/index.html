@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturação Semântica e Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #4C835E;
+        }
+
+        #conteudo {
+            margin: 50px;
+            background-color: #ffff;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+        header img {
+            margin: auto;
+            display: block;
+        }
+
+        header p {
+            color: #40B93C;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center; 
+            padding: 10px 0;
+        }
+
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline;
+            padding: 10px;
+        }
+
+        li > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #4C835E;
+        }
+
+        li > a:hover {
+            background-color: #4C835E;
+            color: #ffff;
+            padding: 5px;
+        }
+
+        main h1, h2 {
+            color: #4C835E;
+        }
+
+        main > aside {
+            border: 2px dashed #40B93C;
+            margin: 20px auto; 
+            display: block;
+            text-align: center;
+            padding: 5px;
+            max-width: 400px; 
+        }
+
+        aside > img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #tabela {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        
+        caption {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #4C835E;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        thead, tfoot {
+            background-color: #4C835E;
+            color: #ffff;
+        }
+
+        .col-produto, .col-total {
+            background-color: #40b93ccd;
+        }
+
+        tbody th {
+             background-color: #40b93ccd;
+             color: #383838;
+             font-weight: bold;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer img {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteudo">
+        <header>
+            <img src="https://ticonsulting.cl/wp-content/uploads/2020/06/Logo-300X75.png" alt="Logomarca Tech Insight Consultoria">
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <p>A Consultoria Tech Insights é líder em análise de mercado e planejamento estratégico para a indústria tecnológica.</p>
+        </header>
+
+        <main>
+            <article>
+                <h1>A Ascensão da Inteligência Artificial em 2025</h1>
+                <p>A IA não é mais uma promessa; é uma realidade. Empresas que não a adotarem ficarão para trás. Nossa análise detalhada mostra as tendências mais quentes.</p>
+                
+                <section> 
+                    <h2>Otimização de Processos</h2>
+                    <p>O primeiro e mais importante avanço é o uso da IA para refinar cadeias de suprimentos e logística. Isso pode gerar uma economia de até 30% em custos operacionais.</p>
+                </section>
+                <section>
+                    <h2>Engajamento do Cliente</h2>
+                    <p>Chatbots e assistentes virtuais baseados em IA melhoram o tempo de resposta e a satisfação do cliente, elevando as taxas de retenção.</p>
+                </section>
+            </article>
+
+            <article>
+                <h2>Novo Chip Quântico da QuantumLeap Revoluciona o Processamento</h2>
+                <p>O processador é 500 vezes mais rápido que os modelos atuais, prometendo mudar a face da computação até o final da década.</p>
+                <p><em>— Por: Dra. Clara Mendes, 10 de Novembro de 2025.</em></p>
+            </article>
+
+            <aside>
+                <p><strong>Não perca! Leia o nosso E-book: "Estratégias de SEO para o Futuro Generativo".</strong></p>
+                <img
+                src="https://www.omie.com.br/blog/wp-content/uploads/2023/12/as-7-ferramentas-de-analise-de-dados.webp"
+                alt="Anúncio análise de dados">
+            </aside>
+            
+            <div id="tabela">
+                <table>
+                    <caption>Projeção de Receita e Datas de Lançamento – 2º Semestre</caption>
+
+                    <colgroup>
+                        <col class="col-produto">
+                        <col span="4"> 
+                        <col class="col-total">
+                    </colgroup>
+                    
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">Produto</th>
+                            <th scope="col" colspan="2">Receita Projetada (em milhões)</th>
+                            <th scope="col" colspan="2">Lançamento Estimado</th>
+                            <th scope="col" rowspan="2">Total Projetado (Milhões)</th>
+                        </tr>
+
+                        <tr>
+                            <th scope="col">Brasil</th>
+                            <th scope="col">Global</th>
+                            <th scope="col">Mês</th>
+                            <th scope="col">Qtd. Unidades</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Smartwatch Alpha</th>
+                            <td>1.5</td>
+                            <td>4.8</td>
+                            <td>Agosto</td>
+                            <td>25.000</td>
+                            <td>6.3</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Fone Pro Max</th>
+                            <td>0.9</td>
+                            <td>3.1</td>
+                            <td>Setembro</td>
+                            <td>18.000</td>
+                            <td>4.0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tablet Ultra</th>
+                            <td>2.0</td>
+                            <td>7.5</td>
+                            <td>Outubro</td>
+                            <td>30.000</td>
+                            <td>9.5</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Drone Lite 3</th>
+                            <td>1.1</td>
+                            <td>4.2</td>
+                            <td>Novembro</td>
+                            <td>15.000</td>
+                            <td>5.3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total de Metas</th>
+                            <td>5.5</td>
+                            <td>19.6</td>
+                            <td colspan="2">-</td>
+                            <td>25.1</td> 
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </nav>
+            <a href="#">
+                <img
+                src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png"
+                alt="ícone Whatsapp"
+                width="35">
+            </a>
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png" alt="Ícone do Linkedin"
+                width="35">
+            </a>
+            <a href="#">
+                <img src="https://www.pngmart.com/files/15/Circle-Facebook-Logo-PNG-Transparent-Picture.png" alt="Ícone Facebook"
+                width="38">
+            </a>
+            <p>
+                &copy; 2025 Tech Insights Consultoria. Todos os direitos reservados.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

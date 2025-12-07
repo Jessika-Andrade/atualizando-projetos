@@ -1,0 +1,1 @@
+# Escreva um programa que, ao iniciar gera um valor aleatório de 1 a 10 e ermite que o usuário chute um número até que o valor aleatório gerado no início do programa seja chutado corretamente. O programa deve informar se o chute foi acima, abaixo ou igual ao valor aleatório gerado no início do programa.
