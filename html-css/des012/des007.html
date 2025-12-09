@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style> 
+        label, input, textarea {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="formulario-url" method="post" id="formulario-completo">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+            
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="(99) 99999-9999">
+            
+        <label for="endereco">Endereço:</label>
+        <textarea name="endereco" id="endereco" rows="3" cols="30" maxlength="50px"></textarea>
+
+        <button type="submit">Enviar padrão</button>
+        <button type="submit" formaction="outra-url" formmethod="get">Enviar para outra URL</button>
+    </form>
+</body>
+</html>

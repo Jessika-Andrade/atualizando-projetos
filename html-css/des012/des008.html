@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Viagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 5px;
+        }
+        
+        .campo-bloco label, 
+        .campo-bloco input, 
+        .campo-bloco textarea,
+        .campo-bloco select {
+            display: block;
+            width: 90%; 
+            margin-top: 5px;
+        }
+
+        .opcao-inline {
+            margin-bottom: 5px; 
+        }
+        
+        .opcao-inline label {
+            display: inline; 
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="processar-reserva" method="post">
+        
+        <fieldset>
+            <legend>Dados Pessoais e Busca</legend>
+            <div class="campo-bloco">
+                <label for="nome-completo">Nome Completo:</label>
+                <input type="text" id="nome-completo" name="nome-completo" required>
+            </div>
+            
+            <div class="campo-bloco">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="campo-bloco">
+                <label for="busca-destino">Busca:</label>
+                <input type="search" id="busca-destino" name="busca-destino" placeholder="Ex: Paris, Tóquio...">
+            </div>
+
+            <div class="campo-bloco">
+                <label for="data">Data de Partida:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observações</legend>
+            <div class="campo-bloco">
+                <label for="mensagem-voo">Nível de conforto desejado:</label>
+                <textarea id="mensagem-voo" name="mensagem-voo" rows="5" maxlength="200"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Classe de Voo</legend>
+            <div class="opcao-inline">
+                <input type="radio" id="economica" name="classe-voo" value="economica">
+                <label for="economica">Econômica</label>
+            </div>
+
+            <div class="opcao-inline">
+                <input type="radio" id="executiva" name="classe-voo" value="executiva">
+                <label for="executiva">Executiva</label>
+            </div>
+
+            <div class="opcao-inline">
+                <input type="radio" id="primeira-classe" name="classe-voo" value="primeira-classe">
+                <label for="primeira-classe">Primeira Classe</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Serviços Adicionais</legend>
+            
+            <div class="opcao-inline">
+                <input type="checkbox" id="assento" name="adicionais" value="assento-espacoso">
+                <label for="assento">Assento com mais espaço</label>
+            </div>
+
+            <div class="opcao-inline">
+                <input type="checkbox" id="seguro" name="adicionais" value="seguro-viagem">
+                <label for="seguro">Seguro Viagem Completo</label>
+            </div>
+
+            <div class="opcao-inline">
+                <input type="checkbox" id="vegano" name="adicionais" value="alimentacao-vegana">
+                <label for="vegano">Alimentação Vegana</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Destino Principal</legend>
+            <div class="campo-bloco">
+                <select name="destino-principal" id="destinos">
+                    <option value="" disabled selected>Selecione um destino...</option> <optgroup label="América do Sul">
+                        <option value="rj">Rio de Janeiro (RJ)</option>
+                        <option value="ba">Buenos Aires (BA)</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="par">Paris (PAR)</option>
+                        <option value="rom">Roma (ROM)</option>
+                        <option value="lon">Londres (LON)</option>
+                    </optgroup>
+                    <optgroup label="Ásia">
+                        <option value="toq">Tóquio (TÓQ)</option>
+                        <option value="ban">Bangkok (BAN)</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Envio de Documentos</legend>
+            <div class="campo-bloco">
+                <label for="upload-arquivos">Passaporte (PDF):</label>
+                <input type="file" id="upload-arquivos" name="documento-passaporte" accept=".pdf" required>
+            </div>
+        </fieldset>
+
+        <button type="submit" title="Confirmar Reserva">
+            <img src="https://cdn-icons-png.flaticon.com/512/32/32223.png" 
+            alt="Ícone de avião para enviar" 
+            width="30" height="30" style="vertical-align: middle;"> 
+            Confirmar Reserva
+        </button>
+
+        <button 
+            type="submit" 
+            formaction="salvar-rascunho" 
+            formmethod="get">
+            Salvar Rascunho
+        </button>
+
+    </form>
+</body>
+</html>
