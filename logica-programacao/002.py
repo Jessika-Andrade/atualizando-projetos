@@ -1,1 +1,16 @@
-# Escreva um programa que, ao iniciar gera um valor aleatório de 1 a 10 e ermite que o usuário chute um número até que o valor aleatório gerado no início do programa seja chutado corretamente. O programa deve informar se o chute foi acima, abaixo ou igual ao valor aleatório gerado no início do programa.
+"""
+O Desafio: Calculadora de Dobro Simples
+Crie um programa que:
+
+ENTRADA: Solicite ao usuário que digite um número inteiro.
+
+PROCESSAMENTO: Calcule o dobro desse número.
+
+SAÍDA: Exiba na tela o número original e o seu dobro, em uma frase clara.
+
+"""
+
+numero = int(input("Digite um número: "))
+dobro_numero = numero * 2
+
+print(f"Seu número escolhido foi {numero}. O dobro é {dobro_numero}")

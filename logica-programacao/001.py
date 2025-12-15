@@ -6,7 +6,7 @@
 salario_mensal = float(input("Qual o seu salário mensal? R$ "))
 horas_trabalhadas = float(input("Quantas horas trabalhadas? "))
 
-if (horas_trabalhadas == 0):
+if horas_trabalhadas == 0:
     print("ERRO: O NÚMERO DE HORAS DEVE SER MAIOR QUE 0!")
 else:
     valor_hora = salario_mensal / horas_trabalhadas
