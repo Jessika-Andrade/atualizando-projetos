@@ -9,8 +9,7 @@ False
 {'city': 'New York', 'population': 8000000}
 None(Este é um valor especial do Python que representa a ausência de um valor, ele tem seu próprio tipo NoneType)
 """
-
-idade_idoso = 150
+idade_idoso = 90
 print(f"Valor de idade_idoso: {idade_idoso}")
 print(f"Tipo de idade_idoso: {type(idade_idoso)}\n")
 
@@ -26,11 +25,11 @@ usuario_inativo = False
 print(f"Valor de usuario_inativo: {usuario_inativo}")
 print(f"Tipo de usuario_inativo: {type(usuario_inativo)}\n")
 
-notas = [10, 20, 30]
+notas = [5, 10, 7]
 print(f"Valor de notas: {notas}")
 print(f"Tipo de notas: {type(notas)}\n")
 
-informacoes_geograficas = {"city": "New York", "population": 8000000}
+informacoes_geograficas = {"city": "New York", "population": 1500000}
 print(f"Valor de informacoes_geograficas: {informacoes_geograficas}")
 print(f"Tipo de informacoes_geograficas: {type(informacoes_geograficas)}\n")
 

@@ -1,0 +1,21 @@
+{
+  "name": "ex-cursos",
+  "version": "1.0.0",
+  "description": "Bem-vindo(a) ao meu repositório pessoal de aprendizado e aprimoramento! 👋",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jessika-Andrade/atualizando-projetos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Jessika-Andrade/atualizando-projetos/issues"
+  },
+  "homepage": "https://github.com/Jessika-Andrade/atualizando-projetos#readme"
+}
