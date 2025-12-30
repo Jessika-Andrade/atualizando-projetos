@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h1 {
+    background-color: #9acfe1;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+img {
+    border: 2px dashed #8b8b8b;
+}
+
