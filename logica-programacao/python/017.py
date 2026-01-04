@@ -1,14 +1,8 @@
-"""
-Diferença circular
-
-Dado dois números a e b (0 a 59), representando minutos:
-
-Calcule a menor diferença entre eles em um relógio
-
-Exemplo:
-a = 5, b = 55 → diferença = 10
-
-"""
+# Diferença circular
+# Dado dois números a e b (0 a 59), representando minutos:
+# Calcule a menor diferença entre eles em um relógio
+# Exemplo:
+# a = 5, b = 55 → diferença = 10
 
 a = int(input("Digite o primeiro número de minutos (0 a 59): "))
 b = int(input("Digite o segundo número de minutos (0 a 59): "))

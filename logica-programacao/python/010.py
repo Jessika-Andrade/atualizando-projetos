@@ -1,12 +1,7 @@
-"""
-Dado um número inteiro positivo n com pelo menos dois dígitos:
-
-Obtenha somente o penúltimo dígito
-
-Exemplo:
-n = 5729 → resultado = 2
-
-"""
+# Dado um número inteiro positivo n com pelo menos dois dígitos:
+# Obtenha somente o penúltimo dígito
+# Exemplo:
+# n = 5729 → resultado = 2
 
 numero_inteiro = int(input("Digite um número com pelo menos dois digitos: "))
 

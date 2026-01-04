@@ -1,15 +1,14 @@
-"""
-Crie um programa que:
 
-ENTRADA: Solicite ao usuário que digite um número inteiro.
+# Crie um programa que:
 
-PROCESSAMENTO (com Decisão):
+# ENTRADA: Solicite ao usuário que digite um número inteiro.
 
-Verifique se o número é par ou ímpar. 
+# PROCESSAMENTO (com Decisão):
 
-SAÍDA: Exiba uma mensagem clara dizendo se o número digitado é "PAR" ou "ÍMPAR".
+# Verifique se o número é par ou ímpar. 
 
-"""
+# SAÍDA: Exiba uma mensagem clara dizendo se o número digitado é "PAR" ou "ÍMPAR".
+
 
 numero = int(input("Digite um número: "))
 

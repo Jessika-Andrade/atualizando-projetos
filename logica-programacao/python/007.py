@@ -1,7 +1,4 @@
-"""
-Média Escolar (Precedência) Um aluno tirou as notas: 7, 8 e 9. Calcule a média final dele.
-
-"""
+# Média Escolar (Precedência) Um aluno tirou as notas: 7, 8 e 9. Calcule a média final dele.
 
 nome_aluno = "João"
 nota1 = 7

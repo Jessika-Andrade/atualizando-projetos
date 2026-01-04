@@ -1,11 +1,8 @@
-"""
-Dado um número inteiro n:
+# Dado um número inteiro n:
 
-Gere 1 se for múltiplo de 3
+# Gere 1 se for múltiplo de 3
 
-Gere 0 caso contrário
-
-"""
+# Gere 0 caso contrário
 
 numero_inteiro = int(input("Digite um número inteiro: "))
 

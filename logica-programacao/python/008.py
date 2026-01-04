@@ -1,11 +1,11 @@
-"""
-Leia dois números reais e calcule:
-soma
-subtração
-multiplicação
-divisão
-Mostre todos os resultados. 
-"""
+
+# Leia dois números reais e calcule:
+# soma
+# subtração
+# multiplicação
+# divisão
+# Mostre todos os resultados. 
+
 
 n1 = float(input("Digite o primeiro número: "))
 n2 = float(input("Digite o segundo número: "))

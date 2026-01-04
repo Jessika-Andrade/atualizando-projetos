@@ -1,11 +1,10 @@
-"""
-Exercício 1: Você comprou 3 pães (R$ 10.00) e um leite (R$ 5.00). Você pagou com uma nota de R$ 20.00.
 
-Crie variáveis para os itens e para o pagamento.
+# Exercício 1: Você comprou 3 pães (R$ 10.00) e um leite (R$ 5.00). Você pagou com uma nota de R$ 20.00.
 
-Calcule o troco.
+# Crie variáveis para os itens e para o pagamento.
 
-"""
+# Calcule o troco.
+
 
 paes_3_unidades = 10.00
 leite = 5.00

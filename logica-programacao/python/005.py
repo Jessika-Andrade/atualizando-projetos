@@ -1,8 +1,5 @@
-"""
-Exercício 2: Você tem 50 balas e quer dividir igualmente entre 4 amigos.
-Quantas balas cada amigo recebe?
-
-"""
+# Você tem 50 balas e quer dividir igualmente entre 4 amigos.
+# Quantas balas cada amigo recebe?
 
 quantidade_balas = 50
 quantidade_amigos = 4

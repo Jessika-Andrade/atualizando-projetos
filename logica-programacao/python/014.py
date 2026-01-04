@@ -1,10 +1,9 @@
-"""Dado um número inteiro m (minutos):
-Calcule:
-Horas completas
-Minutos restantes
-
-Exemplo:
-m = 187 → 3 horas e 7 minutos"""
+# Dado um número inteiro m (minutos):
+# Calcule:
+# Horas completas
+# Minutos restantes
+# Exemplo:
+# m = 187 → 3 horas e 7 minutos
 
 numero = int(input("Digite um número em minutos: "))
 horas_completas = numero // 60;

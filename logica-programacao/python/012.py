@@ -1,12 +1,8 @@
-"""
-Verificação de paridade 
+# Verificação de paridade 
+# Dado um número inteiro n:
+# Gere o valor 1 se o número for ímpar
+# Gere o valor 0 se for par
 
-Dado um número inteiro n:
-
-Gere o valor 1 se o número for ímpar
-
-Gere o valor 0 se for par
-"""
 
 numero_inteiro = int(input("Digite um número: "))
 verificacao = numero_inteiro % 2
