@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #964b00;
+    color: #fff;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+    text-align: center;
+    margin: 10px;
+}
+
+#cabecalho-principal {
+    text-align: center;
+    font-size: 40px;
+}
+
+nav > ul {
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+nav > ul li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: bolder;
+    text-transform: uppercase;
+}
+
+nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+nav > ul > li > a:hover {
+    background-color: #ffffffe8;
+    font-weight: bold;
+    color:#964b00;
+    cursor: pointer;
+}
+
+p {
+    color: #333334;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+img {
+    width: 550px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+a[href$=".pdf"], a[href*=instagram] {
+    color: #e10000ed;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.borda-amarela {
+    border: 2px dashed #ffde21;
+    max-width: 100%;
+    height: auto;
+}
+
+#formulario {
+    background-color: #964b0038;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    width: 300px; 
+    padding: 20px;
+    border: 1px solid #964b00;
+    border-radius: 8px;
+    justify-content: center; 
+}
+
+label, input {
+    margin: 5px 0; 
+}
+
+button[type="submit"] {
+    background-color: #3c923c;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav > ul > li > a, button, input {
+    transition: 0.3s;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #964b00;
+    box-shadow: 0 0 5px rgba(150, 75, 0, 0.3);
+}
+
+footer {
+    background-color: #964b00;
+}
+
+footer > p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 4px;
+}
+
